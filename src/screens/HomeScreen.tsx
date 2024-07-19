@@ -8,7 +8,6 @@ import {
   View,
 } from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-
 import {HomeScreenNavigationProp} from '../navigation/types';
 
 type DATAProps = {
@@ -66,7 +65,7 @@ const HomeScreen = () => {
     return (
       <TouchableOpacity
         onPress={() =>
-          navigation.navigate('Detail', {
+          navigation.navigate('Settings', {
             name: item.name,
             birthYear: item.birth_year,
           })
